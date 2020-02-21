@@ -2,24 +2,95 @@ body {
   padding: 0;
   margin: 0; }
 
+.text-center {
+  text-align: center; }
+
 .container {
   width: 100%;
   max-width: 1140px;
-  background-color: blue;
+  background-color: bisque;
   margin-left: auto;
   margin-right: auto; }
 
 .row {
-  display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px; }
 
-main {
+.main {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center; }
+
+.main__menu {
+  display: inline-block;
+  width: 40%;
   text-align: center;
-  margin: 0;
-  padding: 0; }
+  height: 40em;
+  vertical-align: middle; }
+
+.main__menu--menu1 {
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0 30px 0 0; }
+
+.main__menu--menu1 a {
+  background-color: #FCDFDB;
+  display: block;
+  height: 20em;
+  padding-top: 20em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); }
+
+.main__menu--menu2 {
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0;
+  padding: 0 0 0 30px; }
+
+.main__menu--menu2 a {
+  background-color: #FFF5FE;
+  display: block;
+  height: 20em;
+  padding-top: 20em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); }
+
+.main__menu--menu3 {
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
+  padding: 60px 30px 0 0; }
+
+.main__menu--menu3 a {
+  background-color: #F9F9F9;
+  display: block;
+  height: 20em;
+  padding-top: 20em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); }
+
+.main__menu--menu4 {
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0;
+  padding: 60px 0 0 30px; }
+
+.main__menu--menu4 a {
+  background-color: #FFF5FE;
+  display: block;
+  height: 20em;
+  padding-top: 20em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); }
+
+.main .next {
+  color: #FFC837;
+  display: inline-block;
+  margin: 40px;
+  background-color: #579c87;
+  padding: 10px;
+  border-radius: 10px; }
 
 img {
   padding: 0;
@@ -68,7 +139,24 @@ img {
 header {
   background-color: #579c87;
   text-align: center;
-  padding: 0; }
+  padding: 0;
+  margin-bottom: 40px; }
 
 footer {
-  background-color: #579c87; }
+  text-align: center;
+  background-color: #579c87;
+  margin: 0;
+  padding: 0; }
+
+footer div {
+  display: inline-block;
+  width: 49%; }
+
+footer div:first-of-type {
+  text-align: left; }
+
+footer div:last-of-type {
+  text-align: right; }
+
+footer div a {
+  color: #FFC837; }

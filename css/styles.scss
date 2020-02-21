@@ -1,30 +1,108 @@
 $base-color: #579c87;
+$text-color: #FFC837;
+$menu1-color: #FCDFDB;
+$menu2-color: #FFF5FE;
+$menu3-color: #F9F9F9;
+$menu4-color: #FDFFFD;
 body {
     padding: 0;
     margin: 0;
 }
 
+.text-center {
+    text-align: center;
+}
+
 .container {
     width: 100%;
     max-width: 1140px;
-    background-color: blue;
+    background-color: bisque;
     margin-left: auto;
     margin-right: auto;
     // padding-left: 0;
 }
 
 .row {
-    display: flex;
+    // display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
 }
 
-main {
-    text-align: center;
-    margin: 0;
+.main {
+    margin: 0 auto;
     padding: 0;
+    text-align: center;
+    &__menu {
+        display: inline-block;
+        width: 40%;
+        text-align: center;
+        height: 40em;
+        vertical-align: middle;
+        &--menu1 {
+            margin: 0 auto;
+            text-align: center;
+            vertical-align: middle;
+            padding: 0 30px 0 0;
+            a {
+                background-color: $menu1-color;
+                display: block;
+                height: 20em;
+                padding-top: 20em;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            }
+        }
+        &--menu2 {
+            margin: 0 auto;
+            text-align: center;
+            vertical-align: middle;
+            padding: 0;
+            padding: 0 0 0 30px;
+            a {
+                background-color: $menu2-color;
+                display: block;
+                height: 20em;
+                padding-top: 20em;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            }
+        }
+        &--menu3 {
+            margin: 0 auto;
+            text-align: center;
+            vertical-align: middle;
+            padding: 60px 30px 0 0;
+            a {
+                background-color: $menu3-color;
+                display: block;
+                height: 20em;
+                padding-top: 20em;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            }
+        }
+        &--menu4 {
+            margin: 0 auto;
+            text-align: center;
+            vertical-align: middle;
+            padding: 0;
+            padding: 60px 0 0 30px;
+            a {
+                background-color: $menu2-color;
+                display: block;
+                height: 20em;
+                padding-top: 20em;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            }
+        }
+    }
+    .next {
+        color: $text-color;
+        display: inline-block;
+        margin: 40px;
+        background-color: $base-color;
+        padding: 10px;
+        border-radius: 10px;
+    }
 }
 
 img {
@@ -87,11 +165,29 @@ img {
 }
 
 header {
+    // background-color: $base-color;
     background-color: $base-color;
     text-align: center;
     padding: 0;
+    margin-bottom: 40px;
 }
 
 footer {
+    text-align: center;
     background-color: $base-color;
+    margin: 0;
+    padding: 0;
+    div {
+        display: inline-block;
+        width: 49%;
+        &:first-of-type {
+            text-align: left;
+        }
+        &:last-of-type {
+            text-align: right;
+        }
+        a {
+            color: $text-color;
+        }
+    }
 }
