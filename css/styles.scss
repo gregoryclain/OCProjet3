@@ -9,6 +9,7 @@ $menu4-color: #FDFFFD;
 }
 
 @mixin zoom {
+    // zoom
     transition: all .5s ease;
     -webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
@@ -16,6 +17,13 @@ $menu4-color: #FDFFFD;
     -ms-transform: scale(1.2);
     /* IE 9 */
     transform: scale(1.2);
+    // fade
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
 
 body {
@@ -39,14 +47,6 @@ body {
     margin-right: auto;
 }
 
-.row {
-    // display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-}
-
 .main {
     margin: 60px auto;
     padding: 0;
@@ -67,6 +67,7 @@ body {
             margin-right: 40px;
             margin-bottom: 80px;
             a {
+                color: #3c1218;
                 background-color: $menu1-color;
                 display: block;
                 height: 23em;
@@ -90,6 +91,7 @@ body {
             margin-left: 40px;
             margin-bottom: 80px;
             a {
+                color: #c77412;
                 background-color: $menu2-color;
                 display: block;
                 height: 23em;
@@ -117,7 +119,8 @@ body {
                 height: 23em;
                 padding-top: 17em;
                 em {
-                    background: -webkit-linear-gradient(275deg, #a8d4fa, #207ce5);
+                    background: rgb(5, 87, 175);
+                    background: linear-gradient(90deg, rgba(5, 87, 175, 1) 0%, rgba(173, 245, 255, 1) 100%);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                     padding: 10px
@@ -146,6 +149,15 @@ body {
                 display: block;
                 height: 23em;
                 padding-top: 17em;
+                em {
+                    // background: -webkit-linear-gradient(275deg, #a8d4fa, #207ce5);
+                    // au cas ou gradient pas pris en compte
+                    background: rgb(0, 113, 5);
+                    background: linear-gradient(90deg, rgba(0, 113, 5, 1) 0%, rgba(122, 255, 63, 1) 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    padding: 10px
+                }
                 span {
                     @include size-font-menu;
                 }
@@ -164,17 +176,16 @@ body {
         border-radius: 10px;
         font-size: 1.5em;
     }
+    .img-fluid {
+        // max-width: 100%;
+        max-width: 95%;
+        height: auto;
+    }
 }
 
 img {
     padding: 0;
     margin: 0;
-}
-
-.img-fluid {
-    // max-width: 100%;
-    max-width: 95%;
-    height: auto;
 }
 
 header {
@@ -211,50 +222,57 @@ footer {
     }
 }
 
-.col-md-12 {
-    width: 100%;
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
 }
 
-.col-md-11 {
-    width: 91.66666667%;
+@keyframes fadeIn {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
 }
 
-.col-md-10 {
-    width: 83.33333333%;
-}
-
-.col-md-9 {
-    width: 75%;
-}
-
-.col-md-8 {
-    width: 66.66666667%;
-}
-
-.col-md-7 {
-    width: 58.33333333%;
-}
-
-.col-md-6 {
-    width: 50%;
-}
-
-.col-md-5 {
-    width: 41.66666667%;
-}
-
-.col-md-4 {
-    width: 33.33333333%;
-}
-
-.col-md-3 {
-    width: 25%;
-}
-
-.col-md-2 {
-    width: 16.66666667%;
-}
-
-.col-md-1 {
-    width: 8.33333333%;
-}
+// .col-md-12 {
+//     width: 100%;
+// }
+// .col-md-11 {
+//     width: 91.66666667%;
+// }
+// .col-md-10 {
+//     width: 83.33333333%;
+// }
+// .col-md-9 {
+//     width: 75%;
+// }
+// .col-md-8 {
+//     width: 66.66666667%;
+// }
+// .col-md-7 {
+//     width: 58.33333333%;
+// }
+// .col-md-6 {
+//     width: 50%;
+// }
+// .col-md-5 {
+//     width: 41.66666667%;
+// }
+// .col-md-4 {
+//     width: 33.33333333%;
+// }
+// .col-md-3 {
+//     width: 25%;
+// }
+// .col-md-2 {
+//     width: 16.66666667%;
+// }
+// .col-md-1 {
+//     width: 8.33333333%;
+// }
