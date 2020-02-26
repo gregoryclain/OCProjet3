@@ -171,11 +171,27 @@ body {
     .next {
         color: $text-color;
         display: inline-block;
+        text-align: left;
         margin: 40px;
         background-color: $base-color;
         padding: 5px 30px;
         border-radius: 10px;
         font-size: 1.5em;
+        line-height: 1.5em;
+        width: 200px;
+        max-width: 200px;
+        overflow: hidden;
+        &::after {
+            overflow: hidden;
+            display: inline-block;
+            vertical-align: top;
+            -webkit-animation: ellipsis steps(4, end) 1.5s infinite;
+            animation: ellipsis steps(10, end) 1.5s infinite;
+            content: "\2026";
+            /*  code ascii for ellipsis */
+            width: 0px;
+            // font-size: 2em;
+        }
     }
     .img-fluid {
         // max-width: 100%;
@@ -218,7 +234,7 @@ footer {
         a {
             color: $text-color;
             font-size: 1.1em;
-            animation: shake 2s cubic-bezier(.36, .07, .19, .97) both infinite;
+            animation: shake 1.5s cubic-bezier(.36, .07, .19, .97) both infinite;
             transform: translate3d(0, 0, 0);
             backface-visibility: hidden;
             perspective: 1000px;
@@ -261,6 +277,19 @@ footer {
     }
     100% {
         transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+// animation ellipsis
+@keyframes ellipsis {
+    to {
+        width: 1.5em;
+    }
+}
+
+@-webkit-keyframes ellipsis {
+    to {
+        width: 1.5em;
     }
 }
 

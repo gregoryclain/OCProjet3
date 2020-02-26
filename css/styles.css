@@ -164,11 +164,26 @@ body a {
 .main .next {
   color: #FFC837;
   display: inline-block;
+  text-align: left;
   margin: 40px;
   background-color: #579c87;
   padding: 5px 30px;
   border-radius: 10px;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  line-height: 1.5em;
+  width: 200px;
+  max-width: 200px;
+  overflow: hidden; }
+
+.main .next::after {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: top;
+  -webkit-animation: ellipsis steps(4, end) 1.5s infinite;
+  animation: ellipsis steps(10, end) 1.5s infinite;
+  content: "\2026";
+  /*  code ascii for ellipsis */
+  width: 0px; }
 
 .main .img-fluid {
   max-width: 95%;
@@ -208,7 +223,7 @@ footer div:last-of-type {
 footer div a {
   color: #FFC837;
   font-size: 1.1em;
-  animation: shake 2s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite;
+  animation: shake 1.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
@@ -237,3 +252,11 @@ footer div a {
     transform: translate(1px, 2px) rotate(0deg); }
   100% {
     transform: translate(1px, -2px) rotate(-1deg); } }
+
+@keyframes ellipsis {
+  to {
+    width: 1.5em; } }
+
+@-webkit-keyframes ellipsis {
+  to {
+    width: 1.5em; } }
