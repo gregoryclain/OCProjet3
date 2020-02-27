@@ -189,6 +189,32 @@ body a {
   max-width: 95%;
   height: auto; }
 
+.main-page {
+  margin: 0 auto 100px auto;
+  background-color: #FCDFDB;
+  text-align: center;
+  width: 80%; }
+
+.main-page table {
+  padding: 0 20px;
+  width: 80%; }
+
+.cool-link {
+  text-align: center;
+  display: inline-block; }
+
+.cool-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width .3s; }
+
+.cool-link:hover::after {
+  width: 100%;
+  transition: width .3s; }
+
 img {
   padding: 0;
   margin: 0; }
