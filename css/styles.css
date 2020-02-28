@@ -99,7 +99,7 @@ body a {
   margin-right: 40px; }
 
 .main__menu--menu3 a {
-  background-color: #F9F9F9;
+  background-color: #EEEFF1;
   display: block;
   height: 23em;
   padding-top: 17em; }
@@ -191,13 +191,24 @@ body a {
 
 .main-page {
   margin: 0 auto 100px auto;
-  background-color: #FCDFDB;
   text-align: center;
-  width: 80%; }
+  width: 90%; }
 
 .main-page table {
   padding: 0 20px;
   width: 80%; }
+
+.main-page__menu1 {
+  background-color: #FCDFDB; }
+
+.main-page__menu2 {
+  background-color: #FFF5FE; }
+
+.main-page__menu3 {
+  background-color: #EEEFF1; }
+
+.main-page__menu4 {
+  background-color: #FDFFFD; }
 
 .cool-link {
   text-align: center;
