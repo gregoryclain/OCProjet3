@@ -359,8 +359,7 @@ footer {
         a {
             color: $text-color;
             font-size: 1.1em;
-            animation: shake 1.5s cubic-bezier(.36, .07, .19, .97) both infinite;
-            transform: translate3d(0, 0, 0);
+            animation: shake 1.5s infinite;
             backface-visibility: hidden;
             perspective: 1000px;
             display: inline-block;

@@ -343,8 +343,7 @@ footer div:last-of-type {
 footer div a {
   color: #FFC837;
   font-size: 1.1em;
-  animation: shake 1.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite;
-  transform: translate3d(0, 0, 0);
+  animation: shake 1.5s infinite;
   backface-visibility: hidden;
   perspective: 1000px;
   display: inline-block; }
