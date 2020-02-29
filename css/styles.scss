@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Croissant+One|Devonshire|Itim&display=swap');
 $base-color: #579c87;
 $text-color: #FFC837;
 $menu1-color: #FCDFDB;
@@ -34,6 +35,18 @@ body {
     text-align: center;
 }
 
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
 .container {
     width: 100%;
     max-width: 1140px;
@@ -60,6 +73,7 @@ body {
             overflow: hidden;
             margin-right: 40px;
             margin-bottom: 80px;
+            font-family: 'Devonshire';
             a {
                 color: #3c1218;
                 background-color: $menu1-color;
@@ -68,6 +82,8 @@ body {
                 padding-top: 17em;
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
                 span {
+                    font-style: italic;
+                    font-family: Itim;
                     @include size-font-menu;
                 }
                 &:hover {
@@ -90,7 +106,10 @@ body {
                 display: block;
                 height: 23em;
                 padding-top: 17em;
+                font-family: 'Croissant One';
                 span {
+                    font-family: 'Times New Roman', Times, serif;
+                    font-weight: bold;
                     @include size-font-menu;
                 }
                 &:hover {
@@ -193,26 +212,78 @@ body {
     }
 }
 
+.main-menu {
+    padding: 0 10%;
+}
+
 .main-page {
     // margin: 0 auto;
     margin: 0 auto 100px auto;
     text-align: center;
-    width: 90%;
+    background-color: darkmagenta;
+    // width: 70%;
+    // padding: 0 10%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    h3 {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
     table {
-        padding: 0 20px;
-        width: 80%;
+        // padding: 0 10%;
+        width: 100%;
+        .prix {
+            font-weight: bold;
+        }
     }
     &__menu1 {
         background-color: $menu1-color;
+        padding-left: 5%;
+        padding-right: 5%;
     }
     &__menu2 {
+        padding-left: 10px;
+        padding-right: 10px;
         background-color: $menu2-color;
+        img {
+            width: 30%
+        }
+        table {
+            padding: 0 10%;
+            color: #A7699C;
+            &:first-of-type {
+                color: #CC7000;
+            }
+            &:last-of-type {
+                color: #6355CE;
+            }
+        }
     }
     &__menu3 {
+        h3 {
+            width: 90%;
+            padding: 0 5%;
+            img {
+                width: 30%
+            }
+        }
         background-color: $menu3-color;
+        img {
+            width: 35%
+        }
+        table {
+            padding: 0 10%
+        }
     }
     &__menu4 {
         background-color: $menu4-color;
+        table {
+            padding: 0 10%
+        }
+        img {
+            width: 35%
+        }
     }
 }
 
@@ -238,6 +309,7 @@ body {
 img {
     padding: 0;
     margin: 0;
+    vertical-align: middle;
 }
 
 header {

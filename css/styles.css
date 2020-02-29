@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Croissant+One|Devonshire|Itim&display=swap");
 body {
   padding: 0;
   margin: 0;
@@ -9,6 +10,15 @@ body a {
 
 .text-center {
   text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+.text-left {
+  text-align: left; }
+
+.text-justify {
+  text-align: justify; }
 
 .container {
   width: 100%;
@@ -36,7 +46,8 @@ body a {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   margin-right: 40px;
-  margin-bottom: 80px; }
+  margin-bottom: 80px;
+  font-family: 'Devonshire'; }
 
 .main__menu--menu1 a {
   color: #3c1218;
@@ -47,6 +58,8 @@ body a {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); }
 
 .main__menu--menu1 a span {
+  font-style: italic;
+  font-family: Itim;
   font-size: 2.5em; }
 
 .main__menu--menu1 a:hover {
@@ -74,9 +87,12 @@ body a {
   background-color: #FFF5FE;
   display: block;
   height: 23em;
-  padding-top: 17em; }
+  padding-top: 17em;
+  font-family: 'Croissant One'; }
 
 .main__menu--menu2 a span {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
   font-size: 2.5em; }
 
 .main__menu--menu2 a:hover {
@@ -189,26 +205,74 @@ body a {
   max-width: 95%;
   height: auto; }
 
+.main-menu {
+  padding: 0 10%; }
+
 .main-page {
   margin: 0 auto 100px auto;
   text-align: center;
-  width: 90%; }
+  background-color: darkmagenta;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+
+.main-page h3 {
+  display: flex;
+  width: 100%;
+  justify-content: space-between; }
 
 .main-page table {
-  padding: 0 20px;
-  width: 80%; }
+  width: 100%; }
+
+.main-page table .prix {
+  font-weight: bold; }
 
 .main-page__menu1 {
-  background-color: #FCDFDB; }
+  background-color: #FCDFDB;
+  padding-left: 5%;
+  padding-right: 5%; }
 
 .main-page__menu2 {
+  padding-left: 10px;
+  padding-right: 10px;
   background-color: #FFF5FE; }
+
+.main-page__menu2 img {
+  width: 30%; }
+
+.main-page__menu2 table {
+  padding: 0 10%;
+  color: #A7699C; }
+
+.main-page__menu2 table:first-of-type {
+  color: #CC7000; }
+
+.main-page__menu2 table:last-of-type {
+  color: #6355CE; }
 
 .main-page__menu3 {
   background-color: #EEEFF1; }
 
+.main-page__menu3 h3 {
+  width: 90%;
+  padding: 0 5%; }
+
+.main-page__menu3 h3 img {
+  width: 30%; }
+
+.main-page__menu3 img {
+  width: 35%; }
+
+.main-page__menu3 table {
+  padding: 0 10%; }
+
 .main-page__menu4 {
   background-color: #FDFFFD; }
+
+.main-page__menu4 table {
+  padding: 0 10%; }
+
+.main-page__menu4 img {
+  width: 35%; }
 
 .cool-link {
   text-align: center;
@@ -228,7 +292,8 @@ body a {
 
 img {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  vertical-align: middle; }
 
 header {
   background-color: #579c87;
