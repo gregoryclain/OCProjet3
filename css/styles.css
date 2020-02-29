@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Croissant+One|Devonshire|Itim&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Caveat|Croissant+One|Dancing+Script|Devonshire|Itim|Kaushan+Script&display=swap");
 body {
   padding: 0;
   margin: 0;
@@ -112,7 +112,8 @@ body a {
   padding: 0;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   overflow: hidden;
-  margin-right: 40px; }
+  margin-right: 40px;
+  font-family: 'Dancing Script'; }
 
 .main__menu--menu3 a {
   background-color: #EEEFF1;
@@ -128,6 +129,7 @@ body a {
   padding: 10px; }
 
 .main__menu--menu3 a span {
+  font-family: 'Caveat';
   font-size: 2.5em;
   vertical-align: middle;
   line-height: 2em; }
@@ -155,7 +157,8 @@ body a {
   background-color: #FDFFFD;
   display: block;
   height: 23em;
-  padding-top: 17em; }
+  padding-top: 17em;
+  font-family: 'Kaushan Script'; }
 
 .main__menu--menu4 a em {
   background: #007105;
@@ -165,6 +168,7 @@ body a {
   padding: 10px; }
 
 .main__menu--menu4 a span {
+  font-family: 'Caveat';
   font-size: 2.5em; }
 
 .main__menu--menu4 a:hover {
@@ -227,6 +231,7 @@ body a {
   font-weight: bold; }
 
 .main-page__menu1 {
+  font-family: 'Devonshire';
   background-color: #FCDFDB;
   padding-left: 5%;
   padding-right: 5%; }
@@ -236,8 +241,21 @@ body a {
   padding-right: 10px;
   background-color: #FFF5FE; }
 
+.main-page__menu2 h1 {
+  font-family: 'Croissant One'; }
+
 .main-page__menu2 img {
   width: 30%; }
+
+.main-page__menu2 h3 {
+  /* TODO A TRANSFORMER EN MIXIN */
+  color: #A7699C; }
+
+.main-page__menu2 h3:first-of-type {
+  color: #CC7000; }
+
+.main-page__menu2 h3:last-of-type {
+  color: #6355CE; }
 
 .main-page__menu2 table {
   padding: 0 10%;

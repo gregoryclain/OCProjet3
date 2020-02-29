@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Croissant+One|Devonshire|Itim&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Caveat|Croissant+One|Dancing+Script|Devonshire|Itim|Kaushan+Script&display=swap');
 $base-color: #579c87;
 $text-color: #FFC837;
 $menu1-color: #FCDFDB;
@@ -126,6 +126,7 @@ body {
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
             overflow: hidden;
             margin-right: 40px;
+            font-family: 'Dancing Script';
             a {
                 background-color: $menu3-color;
                 display: block;
@@ -139,6 +140,7 @@ body {
                     padding: 10px
                 }
                 span {
+                    font-family: 'Caveat';
                     @include size-font-menu;
                     vertical-align: middle;
                     line-height: 2em;
@@ -162,6 +164,7 @@ body {
                 display: block;
                 height: 23em;
                 padding-top: 17em;
+                font-family: 'Kaushan Script';
                 em {
                     // background: -webkit-linear-gradient(275deg, #a8d4fa, #207ce5);
                     // au cas ou gradient pas pris en compte
@@ -172,6 +175,7 @@ body {
                     padding: 10px
                 }
                 span {
+                    font-family: 'Caveat';
                     @include size-font-menu;
                 }
                 &:hover {
@@ -238,16 +242,30 @@ body {
         }
     }
     &__menu1 {
+        font-family: 'Devonshire';
         background-color: $menu1-color;
         padding-left: 5%;
         padding-right: 5%;
     }
     &__menu2 {
+        h1 {
+            font-family: 'Croissant One';
+        }
         padding-left: 10px;
         padding-right: 10px;
         background-color: $menu2-color;
         img {
             width: 30%
+        }
+        h3 {
+            /* TODO A TRANSFORMER EN MIXIN */
+            color: #A7699C;
+            &:first-of-type {
+                color: #CC7000;
+            }
+            &:last-of-type {
+                color: #6355CE;
+            }
         }
         table {
             padding: 0 10%;
