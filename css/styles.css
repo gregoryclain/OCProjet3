@@ -12,6 +12,9 @@ body a {
   color: #FFC837;
   text-decoration: none; }
 
+body .container > section > h1 {
+  font-size: 2.5em; }
+
 .text-center {
   text-align: center; }
 
@@ -37,14 +40,14 @@ body a {
   width: 40%;
   text-align: center;
   height: 600px;
-  vertical-align: middle; }
+  vertical-align: middle;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); }
 
 .main__menu--menu1 {
   margin: 0 auto;
   text-align: center;
   vertical-align: middle;
   padding: 0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   margin-right: 40px;
   margin-bottom: 80px;
@@ -81,7 +84,6 @@ body a {
   text-align: center;
   vertical-align: middle;
   padding: 0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   margin-left: 40px;
   margin-bottom: 80px;
@@ -123,7 +125,6 @@ body a {
   text-align: center;
   vertical-align: middle;
   padding: 0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   margin-right: 40px;
   font-family: 'Dancing Script';
@@ -163,7 +164,6 @@ body a {
   text-align: center;
   vertical-align: middle;
   padding: 0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   margin-left: 40px;
   font-size: 3em; }
@@ -201,15 +201,15 @@ body a {
   color: #FFC837;
   display: inline-block;
   text-align: left;
-  margin: 40px;
+  margin: 60px;
   background-color: #579c87;
-  padding: 5px 30px;
+  padding: 0 30px 0 130px;
   border-radius: 10px;
-  font-size: 1.5em;
-  line-height: 1.5em;
-  width: 200px;
-  max-width: 200px;
-  overflow: hidden; }
+  font-size: 2.3em;
+  line-height: 2em;
+  width: 380px;
+  overflow: hidden;
+  letter-spacing: 1px; }
 
 .main .next::after {
   overflow: hidden;
@@ -231,9 +231,9 @@ body a {
 .main-page {
   margin: 0 auto 100px auto;
   text-align: center;
-  background-color: darkmagenta;
-  padding-top: 100px;
-  padding-bottom: 100px; }
+  padding-top: 50px;
+  padding-bottom: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); }
 
 .main-page h3 {
   display: flex;
@@ -241,16 +241,42 @@ body a {
   justify-content: space-between; }
 
 .main-page table {
+  margin-bottom: 75px;
   width: 100%; }
 
 .main-page table .prix {
   font-weight: bold; }
 
 .main-page__menu1 {
-  font-family: 'Devonshire';
   background-color: #FCDFDB;
-  padding-left: 5%;
-  padding-right: 5%; }
+  padding-left: 7%;
+  padding-right: 7%;
+  color: #3c1218;
+  font-family: "Segoe print";
+  font-size: 1.2em;
+  font-weight: normal;
+  margin-bottom: 150px; }
+
+.main-page__menu1 img {
+  width: 35%; }
+
+.main-page__menu1 h1 {
+  font-weight: normal;
+  font-family: 'Devonshire';
+  font-size: 2.7em; }
+
+.main-page__menu1 h1 img {
+  width: 10%; }
+
+.main-page__menu1 .signature {
+  margin-top: 50px;
+  font-size: 2.2em;
+  font-weight: normal;
+  font-family: 'Devonshire'; }
+
+.main-page__menu1 .signature img {
+  width: 6%;
+  padding-bottom: 5px; }
 
 .main-page__menu2 {
   padding-left: 10px;
@@ -332,8 +358,11 @@ img {
 header {
   background-color: #579c87;
   text-align: center;
-  padding: 0;
+  padding: 30px;
   margin-bottom: 40px; }
+
+header img {
+  width: 30%; }
 
 footer {
   position: fixed;
@@ -348,17 +377,20 @@ footer {
 footer div {
   padding: 20px 0;
   display: inline-block;
-  width: 49%; }
+  width: 47%; }
 
 footer div:first-of-type {
-  text-align: left; }
+  text-align: left;
+  padding-left: 1%; }
 
 footer div:last-of-type {
-  text-align: right; }
+  text-align: right;
+  padding-right: 1%; }
 
 footer div a {
   color: #FFC837;
-  font-size: 1.1em; }
+  font-size: 1.8em;
+  letter-spacing: 1px; }
 
 footer div a:hover {
   animation: shake 1.5s infinite;
@@ -391,9 +423,5 @@ footer div a:hover {
     transform: translate(1px, -2px) rotate(-1deg); } }
 
 @keyframes ellipsis {
-  to {
-    width: 1.5em; } }
-
-@-webkit-keyframes ellipsis {
   to {
     width: 1.5em; } }
