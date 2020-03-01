@@ -1,4 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Caveat|Croissant+One|Dancing+Script|Devonshire|Itim|Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cantata+One|Caveat|Croissant+One|Dancing+Script|Devonshire|Itim|Kaushan+Script|Sree+Krushnadevaraya&display=swap");
+@font-face {
+  font-family: "Segoe print";
+  src: url("../fonts/segoepr.ttf"); }
+
 body {
   padding: 0;
   margin: 0;
@@ -17,9 +21,6 @@ body a {
 .text-left {
   text-align: left; }
 
-.text-justify {
-  text-align: justify; }
-
 .container {
   width: 100%;
   max-width: 1140px;
@@ -35,7 +36,7 @@ body a {
   display: inline-block;
   width: 40%;
   text-align: center;
-  height: 40em;
+  height: 600px;
   vertical-align: middle; }
 
 .main__menu--menu1 {
@@ -47,20 +48,23 @@ body a {
   overflow: hidden;
   margin-right: 40px;
   margin-bottom: 80px;
-  font-family: 'Devonshire'; }
+  font-family: 'Devonshire';
+  font-size: 2.5em; }
+
+.main__menu--menu1 img {
+  width: 20%; }
 
 .main__menu--menu1 a {
   color: #3c1218;
   background-color: #FCDFDB;
   display: block;
-  height: 23em;
-  padding-top: 17em;
+  height: 100%;
+  padding-top: 35%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); }
 
 .main__menu--menu1 a span {
-  font-style: italic;
-  font-family: Itim;
-  font-size: 2.5em; }
+  font-weight: bold;
+  font-family: "Segoe print"; }
 
 .main__menu--menu1 a:hover {
   transition: all .5s ease;
@@ -80,20 +84,29 @@ body a {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   margin-left: 40px;
-  margin-bottom: 80px; }
+  margin-bottom: 80px;
+  font-size: 2em; }
 
 .main__menu--menu2 a {
   color: #c77412;
   background-color: #FFF5FE;
   display: block;
-  height: 23em;
-  padding-top: 17em;
+  height: 100%;
+  padding-top: 50%;
   font-family: 'Croissant One'; }
 
+.main__menu--menu2 a em {
+  font-style: normal;
+  background: linear-gradient(92deg, #e38a12 0%, #955aff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
 .main__menu--menu2 a span {
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: bold;
-  font-size: 2.5em; }
+  display: inline-block;
+  padding-top: 30px;
+  font-size: 1.9em;
+  font-family: "Cantata One";
+  font-weight: 600; }
 
 .main__menu--menu2 a:hover {
   transition: all .5s ease;
@@ -113,24 +126,25 @@ body a {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   margin-right: 40px;
-  font-family: 'Dancing Script'; }
+  font-family: 'Dancing Script';
+  font-size: 3em; }
 
 .main__menu--menu3 a {
   background-color: #EEEFF1;
   display: block;
-  height: 23em;
-  padding-top: 17em; }
+  height: 100%;
+  padding-top: 50%;
+  color: #0887fb !important; }
 
 .main__menu--menu3 a em {
-  background: #0557af;
-  background: linear-gradient(90deg, #0557af 0%, #adf5ff 100%);
+  font-style: normal;
+  background: linear-gradient(92deg, #0825db 0%, #0889fb 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 10px; }
 
 .main__menu--menu3 a span {
-  font-family: 'Caveat';
-  font-size: 2.5em;
+  font-family: "Segoe print", "Caveat";
   vertical-align: middle;
   line-height: 2em; }
 
@@ -151,16 +165,19 @@ body a {
   padding: 0;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   overflow: hidden;
-  margin-left: 40px; }
+  margin-left: 40px;
+  font-size: 3em; }
 
 .main__menu--menu4 a {
   background-color: #FDFFFD;
   display: block;
-  height: 23em;
-  padding-top: 17em;
-  font-family: 'Kaushan Script'; }
+  height: 100%;
+  padding-top: 50%;
+  font-family: 'Kaushan Script';
+  color: #72bf56; }
 
 .main__menu--menu4 a em {
+  font-style: normal;
   background: #007105;
   background: linear-gradient(90deg, #007105 0%, #7aff3f 100%);
   -webkit-background-clip: text;
@@ -168,8 +185,7 @@ body a {
   padding: 10px; }
 
 .main__menu--menu4 a span {
-  font-family: 'Caveat';
-  font-size: 2.5em; }
+  font-family: "Segoe print", "Caveat"; }
 
 .main__menu--menu4 a:hover {
   transition: all .5s ease;
@@ -342,7 +358,9 @@ footer div:last-of-type {
 
 footer div a {
   color: #FFC837;
-  font-size: 1.1em;
+  font-size: 1.1em; }
+
+footer div a:hover {
   animation: shake 1.5s infinite;
   backface-visibility: hidden;
   perspective: 1000px;

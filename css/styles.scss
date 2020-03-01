@@ -1,12 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Caveat|Croissant+One|Dancing+Script|Devonshire|Itim|Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cantata+One|Caveat|Croissant+One|Dancing+Script|Devonshire|Itim|Kaushan+Script|Sree+Krushnadevaraya&display=swap');
 $base-color: #579c87;
 $text-color: #FFC837;
 $menu1-color: #FCDFDB;
 $menu2-color: #FFF5FE;
 $menu3-color: #EEEFF1;
 $menu4-color: #FDFFFD;
+@font-face {
+    font-family: "Segoe print";
+    src: url("../fonts/segoepr.ttf");
+}
+
 @mixin size-font-menu {
-    font-size: 2.5em;
+    // font-size: 4em;
 }
 
 @mixin zoom {
@@ -43,10 +48,6 @@ body {
     text-align: left;
 }
 
-.text-justify {
-    text-align: justify;
-}
-
 .container {
     width: 100%;
     max-width: 1140px;
@@ -62,7 +63,7 @@ body {
         display: inline-block;
         width: 40%;
         text-align: center;
-        height: 40em;
+        height: 600px;
         vertical-align: middle;
         &--menu1 {
             margin: 0 auto;
@@ -74,16 +75,22 @@ body {
             margin-right: 40px;
             margin-bottom: 80px;
             font-family: 'Devonshire';
+            font-size: 2.5em;
+            img {
+                width: 20%
+            }
             a {
                 color: #3c1218;
                 background-color: $menu1-color;
                 display: block;
-                height: 23em;
-                padding-top: 17em;
+                height: 100%;
+                padding-top: 35%;
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
                 span {
-                    font-style: italic;
-                    font-family: Itim;
+                    // font-style: italic;
+                    // font-family: Itim;
+                    font-weight: bold;
+                    font-family: "Segoe print";
                     @include size-font-menu;
                 }
                 &:hover {
@@ -100,16 +107,26 @@ body {
             overflow: hidden;
             margin-left: 40px;
             margin-bottom: 80px;
+            font-size: 2em;
             a {
                 color: #c77412;
                 background-color: $menu2-color;
                 display: block;
-                height: 23em;
-                padding-top: 17em;
+                height: 100%;
+                padding-top: 50%;
                 font-family: 'Croissant One';
+                em {
+                    font-style: normal;
+                    background: linear-gradient(92deg, rgba(227, 138, 18, 1) 0%, rgba(149, 90, 255, 1) 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
                 span {
-                    font-family: 'Times New Roman', Times, serif;
-                    font-weight: bold;
+                    display: inline-block;
+                    padding-top: 30px;
+                    font-size: 1.9em;
+                    font-family: "Cantata One";
+                    font-weight: 600;
                     @include size-font-menu;
                 }
                 &:hover {
@@ -127,20 +144,26 @@ body {
             overflow: hidden;
             margin-right: 40px;
             font-family: 'Dancing Script';
+            font-size: 3em;
             a {
                 background-color: $menu3-color;
                 display: block;
-                height: 23em;
-                padding-top: 17em;
+                height: 100%;
+                padding-top: 50%;
+                color: #0887fb !important;
+                // background: rgb(5, 87, 175);
+                // background: linear-gradient(90deg, rgba(8, 37, 19, 1) 0%, rgba(173, 245, 255, 1) 100%);
+                // -webkit-background-clip: text;
+                // -webkit-text-fill-color: transparent;
                 em {
-                    background: rgb(5, 87, 175);
-                    background: linear-gradient(90deg, rgba(5, 87, 175, 1) 0%, rgba(173, 245, 255, 1) 100%);
+                    font-style: normal;
+                    background: linear-gradient(92deg, rgba(8, 37, 219, 1) 0%, rgba(8, 137, 251, 1) 100%);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
-                    padding: 10px
+                    padding: 10px;
                 }
                 span {
-                    font-family: 'Caveat';
+                    font-family: "Segoe print", "Caveat";
                     @include size-font-menu;
                     vertical-align: middle;
                     line-height: 2em;
@@ -158,14 +181,16 @@ body {
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
             overflow: hidden;
             margin-left: 40px;
-            // padding: 60px 0 0 30px;
+            font-size: 3em;
             a {
                 background-color: $menu4-color;
                 display: block;
-                height: 23em;
-                padding-top: 17em;
+                height: 100%;
+                padding-top: 50%;
                 font-family: 'Kaushan Script';
+                color: #72bf56;
                 em {
+                    font-style: normal;
                     // background: -webkit-linear-gradient(275deg, #a8d4fa, #207ce5);
                     // au cas ou gradient pas pris en compte
                     background: rgb(0, 113, 5);
@@ -175,7 +200,7 @@ body {
                     padding: 10px
                 }
                 span {
-                    font-family: 'Caveat';
+                    font-family: "Segoe print", "Caveat";
                     @include size-font-menu;
                 }
                 &:hover {
@@ -359,10 +384,12 @@ footer {
         a {
             color: $text-color;
             font-size: 1.1em;
-            animation: shake 1.5s infinite;
-            backface-visibility: hidden;
-            perspective: 1000px;
-            display: inline-block;
+            &:hover {
+                animation: shake 1.5s infinite;
+                backface-visibility: hidden;
+                perspective: 1000px;
+                display: inline-block;
+            }
         }
     }
 }
