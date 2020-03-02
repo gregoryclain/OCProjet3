@@ -153,10 +153,6 @@ body {
                 height: 100%;
                 padding-top: 50%;
                 color: #0887fb !important;
-                // background: rgb(5, 87, 175);
-                // background: linear-gradient(90deg, rgba(8, 37, 19, 1) 0%, rgba(173, 245, 255, 1) 100%);
-                // -webkit-background-clip: text;
-                // -webkit-text-fill-color: transparent;
                 em {
                     font-style: normal;
                     background: linear-gradient(92deg, rgba(8, 37, 219, 1) 0%, rgba(8, 137, 251, 1) 100%);
@@ -194,7 +190,7 @@ body {
                     font-style: normal;
                     // au cas ou gradient pas pris en compte
                     background: rgb(0, 113, 5);
-                    background: linear-gradient(90deg, rgba(0, 113, 5, 1) 0%, rgba(122, 255, 63, 1) 100%);
+                    background: linear-gradient(90deg, rgba(62, 146, 58, 1) 0%, rgba(188, 253, 126, 1) 100%);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                     padding: 10px
@@ -263,6 +259,7 @@ body {
             // font-weight: bold;
         }
     }
+    margin-bottom: 150px;
     &__menu1 {
         background-color: $menu1-color;
         padding-left: 7%;
@@ -271,7 +268,6 @@ body {
         font-family: "Segoe print";
         font-size: 1.2em;
         font-weight: normal;
-        margin-bottom: 150px;
         img {
             width: 35%
         }
@@ -342,11 +338,22 @@ body {
         }
     }
     &__menu3 {
+        font-family: "Segoe print", "Caveat";
+        h1 {
+            font-weight: normal;
+            font-family: 'Dancing Script';
+            font-size: 4.5em;
+            background: linear-gradient(92deg, rgba(8, 37, 219, 1) 0%, rgba(8, 137, 251, 1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 80px;
+        }
         h3 {
+            font-weight: normal;
             width: 90%;
             padding: 0 5%;
             img {
-                width: 30%
+                width: 33%
             }
         }
         background-color: $menu3-color;
@@ -354,16 +361,37 @@ body {
             width: 35%
         }
         table {
-            padding: 0 10%
+            padding: 0 15%
+        }
+        td {
+            line-height: 2em;
         }
     }
     &__menu4 {
+        font-family: "Segoe print", "Caveat";
         background-color: $menu4-color;
+        h1 {
+            font-size: 4em;
+            font-weight: normal;
+            font-family: 'Kaushan Script';
+            color: #72bf56;
+            background: rgb(0, 113, 5);
+            background: linear-gradient(90deg, rgba(62, 146, 58, 1) 0%, rgba(188, 253, 126, 1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 80px;
+        }
+        h3 {
+            font-weight: normal;
+        }
         table {
             padding: 0 10%
         }
         img {
             width: 35%
+        }
+        td {
+            line-height: 2em;
         }
     }
 }
