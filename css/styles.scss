@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Cantata+One|Caveat|Croissant+One|Dancing+Script|Devonshire|Itim|Kaushan+Script|Sree+Krushnadevaraya&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:700|Source+Serif+Pro|Cantata+One|Caveat|Croissant+One|Dancing+Script|Devonshire|Itim|Kaushan+Script|Sree+Krushnadevaraya&display=swap');
 $base-color: #579c87;
 $text-color: #FFC837;
 $menu1-color: #FCDFDB;
@@ -257,10 +257,10 @@ body {
         justify-content: space-between;
     }
     table {
-        margin-bottom: 75px;
+        margin-bottom: 60px;
         width: 100%;
         .prix {
-            font-weight: bold;
+            // font-weight: bold;
         }
     }
     &__menu1 {
@@ -293,18 +293,34 @@ body {
                 padding-bottom: 5px
             }
         }
+        td {
+            line-height: 2em;
+        }
     }
     &__menu2 {
         h1 {
             font-family: 'Croissant One';
+            background: linear-gradient(92deg, rgba(227, 138, 18, 1) 0%, rgba(149, 90, 255, 1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-top: 60px;
+            margin-bottom: 60px
         }
+        font-size: 1.2em;
+        font-family: 'Source Serif Pro';
         padding-left: 10px;
         padding-right: 10px;
         background-color: $menu2-color;
         img {
-            width: 30%
+            width: 34%;
+        }
+        td {
+            line-height: 2em;
         }
         h3 {
+            display: inline-block;
+            // font-weight: normal;
+            font-family: 'PT Serif';
             /* TODO A TRANSFORMER EN MIXIN */
             color: #A7699C;
             &:first-of-type {
@@ -315,7 +331,7 @@ body {
             }
         }
         table {
-            padding: 0 10%;
+            padding: 0 12%;
             color: #A7699C;
             &:first-of-type {
                 color: #CC7000;
