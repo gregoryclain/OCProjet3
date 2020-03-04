@@ -467,7 +467,15 @@ footer {
 }
 
 // responsive 
-@media only screen and (max-width: 991px) {}
+@media only screen and (max-width: 991px) {
+    .main-page {
+        h3 {
+            img {
+                max-width: 20%
+            }
+        }
+    }
+}
 
 @media only screen and (max-width: 768px) {
     .main {
@@ -481,9 +489,17 @@ footer {
             }
         }
     }
+    .main-page {
+        h3 {
+            img {
+                max-width: 20%
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 500px) {
+    // homepage
     header {
         img {
             width: 80%;
@@ -522,6 +538,36 @@ footer {
                 padding: 0;
                 margin: 0;
             }
+        }
+    }
+    // other pages
+    .main-page {
+        h1 {
+            font-size: 1.7em;
+            img {
+                width: 30%
+            }
+        }
+        h3 {
+            img {
+                display: none;
+            }
+        }
+        tr>td {
+            font-size: 0.8em;
+        }
+        &__menu1 {
+            .signature {
+                img {
+                    width: 10%;
+                }
+                font-size: 1.7em;
+            }
+        }
+        .cool-link {
+            display: block;
+            width: 100%;
+            text-align: center;
         }
     }
 }

@@ -442,13 +442,19 @@ footer div a:hover {
   perspective: 1000px;
   display: inline-block; }
 
+@media only screen and (max-width: 991px) {
+  .main-page h3 img {
+    max-width: 20%; } }
+
 @media only screen and (max-width: 768px) {
   .main__menu {
     height: 400px; }
   .main__menu a {
     padding-top: 30%; }
   .main__menu a span {
-    font-size: 1em; } }
+    font-size: 1em; }
+  .main-page h3 img {
+    max-width: 20%; } }
 
 @media only screen and (max-width: 500px) {
   header img {
@@ -477,7 +483,23 @@ footer div a:hover {
   footer div a {
     font-size: 1.5em;
     padding: 0;
-    margin: 0; } }
+    margin: 0; }
+  .main-page h1 {
+    font-size: 1.7em; }
+  .main-page h1 img {
+    width: 30%; }
+  .main-page h3 img {
+    display: none; }
+  .main-page tr > td {
+    font-size: 0.8em; }
+  .main-page__menu1 .signature {
+    font-size: 1.7em; }
+  .main-page__menu1 .signature img {
+    width: 10%; }
+  .main-page .cool-link {
+    display: block;
+    width: 100%;
+    text-align: center; } }
 
 @keyframes shake {
   0% {
