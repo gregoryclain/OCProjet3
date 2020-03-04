@@ -442,6 +442,43 @@ footer div a:hover {
   perspective: 1000px;
   display: inline-block; }
 
+@media only screen and (max-width: 768px) {
+  .main__menu {
+    height: 400px; }
+  .main__menu a {
+    padding-top: 30%; }
+  .main__menu a span {
+    font-size: 1em; } }
+
+@media only screen and (max-width: 500px) {
+  header img {
+    width: 80%; }
+  .main__menu {
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    margin: 5%; }
+  .main .next {
+    display: block;
+    max-width: 90%;
+    font-size: 1.5em;
+    padding: 0;
+    margin: 0 5% 100px 5%;
+    text-align: center; }
+  footer div {
+    display: block;
+    width: 100%; }
+  footer div:first-of-type {
+    text-align: center;
+    padding: 0; }
+  footer div:last-of-type {
+    text-align: center;
+    padding: 0; }
+  footer div a {
+    font-size: 1.5em;
+    padding: 0;
+    margin: 0; } }
+
 @keyframes shake {
   0% {
     transform: translate(1px, 1px) rotate(0deg); }

@@ -466,6 +466,66 @@ footer {
     }
 }
 
+// responsive 
+@media only screen and (max-width: 991px) {}
+
+@media only screen and (max-width: 768px) {
+    .main {
+        &__menu {
+            height: 400px;
+            a {
+                padding-top: 30%;
+                span {
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    header {
+        img {
+            width: 80%;
+        }
+    }
+    .main {
+        &__menu {
+            margin: 0;
+            padding: 0;
+            width: 90%;
+            margin: 5%;
+        }
+        .next {
+            display: block;
+            max-width: 90%;
+            font-size: 1.5em;
+            padding: 0;
+            margin: 0 5% 100px 5%;
+            text-align: center;
+        }
+    }
+    footer {
+        div {
+            display: block;
+            width: 100%;
+            &:first-of-type {
+                text-align: center;
+                padding: 0;
+            }
+            &:last-of-type {
+                text-align: center;
+                padding: 0;
+            }
+            a {
+                font-size: 1.5em;
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+}
+
 // animation shake
 @keyframes shake {
     0% {
