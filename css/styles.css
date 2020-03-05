@@ -386,8 +386,8 @@ body .container > section > h1 {
   content: '';
   display: block;
   width: 0;
-  height: 2px;
-  background: #fff;
+  height: 4px;
+  background: #579C87;
   transition: width .3s; }
 
 .cool-link:hover::after {

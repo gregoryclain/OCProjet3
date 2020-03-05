@@ -11,10 +11,6 @@ $menu1-text-color: #3c1218;
     src: url("../fonts/segoepr.ttf");
 }
 
-@mixin size-font-menu {
-    // font-size: 4em;
-}
-
 @mixin zoom {
     // zoom
     transition: all .5s ease;
@@ -96,7 +92,6 @@ body {
                     // font-family: Itim;
                     font-weight: bold;
                     font-family: "Segoe print";
-                    @include size-font-menu;
                 }
                 &:hover {
                     @include zoom;
@@ -131,7 +126,6 @@ body {
                     font-size: 1.9em;
                     font-family: "Cantata One";
                     font-weight: 600;
-                    @include size-font-menu;
                 }
                 &:hover {
                     @include zoom;
@@ -162,7 +156,6 @@ body {
                 }
                 span {
                     font-family: "Segoe print", "Caveat";
-                    @include size-font-menu;
                     vertical-align: middle;
                     line-height: 2em;
                 }
@@ -197,7 +190,6 @@ body {
                 }
                 span {
                     font-family: "Segoe print", "Caveat";
-                    @include size-font-menu;
                 }
                 &:hover {
                     @include zoom;
@@ -405,8 +397,8 @@ body {
     content: '';
     display: block;
     width: 0;
-    height: 2px;
-    background: #fff;
+    height: 4px;
+    background: #579C87;
     transition: width .3s;
 }
 
