@@ -387,8 +387,7 @@ body .container > h1 {
   display: block;
   width: 0;
   height: 4px;
-  background: #579C87;
-  transition: width .3s; }
+  background: #579C87; }
 
 .cool-link:hover::after {
   width: 100%;
