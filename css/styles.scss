@@ -299,9 +299,6 @@ body {
         padding-left: 10px;
         padding-right: 10px;
         background-color: $menu2-color;
-        img {
-            width: 34%;
-        }
         td {
             line-height: 2em;
         }
@@ -316,6 +313,9 @@ body {
             }
             &:last-of-type {
                 color: #6355CE;
+            }
+            img {
+                width: 33%;
             }
         }
         table {

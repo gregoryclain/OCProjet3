@@ -293,9 +293,6 @@ body .container > h1 {
   margin-top: 60px;
   margin-bottom: 60px; }
 
-.main-page__menu2 img {
-  width: 34%; }
-
 .main-page__menu2 td {
   line-height: 2em; }
 
@@ -310,6 +307,9 @@ body .container > h1 {
 
 .main-page__menu2 h3:last-of-type {
   color: #6355CE; }
+
+.main-page__menu2 h3 img {
+  width: 33%; }
 
 .main-page__menu2 table {
   padding: 0 12%;
