@@ -43,6 +43,11 @@ body .container > h1 {
   vertical-align: middle;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); }
 
+.main__menu a {
+  display: block;
+  height: 100%;
+  padding-top: 50%; }
+
 .main__menu--menu1 {
   margin: 0 auto;
   text-align: center;
@@ -60,8 +65,6 @@ body .container > h1 {
 .main__menu--menu1 a {
   color: #3c1218;
   background-color: #FCDFDB;
-  display: block;
-  height: 100%;
   padding-top: 35%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); }
 
@@ -92,9 +95,6 @@ body .container > h1 {
 .main__menu--menu2 a {
   color: #c77412;
   background-color: #FFF5FE;
-  display: block;
-  height: 100%;
-  padding-top: 50%;
   font-family: 'Croissant One'; }
 
 .main__menu--menu2 a em {
@@ -132,9 +132,6 @@ body .container > h1 {
 
 .main__menu--menu3 a {
   background-color: #EEEFF1;
-  display: block;
-  height: 100%;
-  padding-top: 50%;
   color: #0887fb !important; }
 
 .main__menu--menu3 a em {
@@ -170,9 +167,6 @@ body .container > h1 {
 
 .main__menu--menu4 a {
   background-color: #FDFFFD;
-  display: block;
-  height: 100%;
-  padding-top: 50%;
   font-family: 'Kaushan Script';
   color: #72bf56; }
 
@@ -465,11 +459,10 @@ footer div a:hover {
     margin: 5%; }
   .main .next {
     display: block;
-    max-width: 90%;
+    max-width: 70%;
     font-size: 1.5em;
-    padding: 0;
-    margin: 0 5% 100px 5%;
-    text-align: center; }
+    padding: 0 0 0 20%;
+    margin: 0 5% 100px 5%; }
   footer div {
     display: block;
     width: 100%; }
@@ -499,6 +492,19 @@ footer div a:hover {
     display: block;
     width: 100%;
     text-align: center; } }
+
+@media only screen and (max-width: 500px) {
+  .main__menu {
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    margin: 5%; }
+  .main .next {
+    display: block;
+    max-width: 70%;
+    font-size: 1.5em;
+    padding: 0 0 0 20%;
+    margin: 0 5% 100px 5%; } }
 
 @keyframes shake {
   0% {
